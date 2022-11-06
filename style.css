@@ -115,7 +115,7 @@ p.experience__skill {
   list-style-type: none;
 }
 .skill__information li {
-  display: inline; 
+  display: inline;
 }
 .skill__information li::after {
   content: " - ";
@@ -166,4 +166,83 @@ h2.formations {
   font-size: 10px;
   font-weight: bold;
   text-decoration: underline;
+}
+
+/* Tablets and phones */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  a {
+    font-size: 14px;
+  }
+  img {
+    width: 20px;
+  }
+
+  .body {
+    width: 96%;
+    height: 100%;
+    padding: 10px 0px 10px 0px;
+  }
+  .header {
+    margin-bottom: 10px;
+  }
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .header__content {
+    text-align: center;
+    width: 85%;
+  }
+  .header-p {
+    font-size: 14px;
+  }
+  .imgandtext p {
+    font-size: 14px;
+  }
+  .imgandtext.grow {
+    margin-right: 5px;
+  }
+  .imgandtext {
+    margin-right: 5px;
+  }
+  .social {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .info {
+    gap: 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .info__experience {
+    width: 85%;
+  }
+  .info__other {
+    width: 85%;
+  }
+  p.date {
+    font-size: 15px;
+  }
+  p.qualification {
+    font-size: 14px;
+  }
+  p.experience__skill {
+    font-size: 12px;
+  }
+  p.information {
+    font-size: 14px;
+  }
+  .skill__information {
+    font-size: 14px;
+  }
+  .project__clickable {
+    font-size: 16px;
+  }
 }
