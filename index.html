@@ -9,7 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
+
     <title>Dev Labs HTML & CSS</title>
 </head>
 
@@ -19,102 +22,94 @@
             <div class="container">
                 <div class="header__content">
                     <h1>Jorge Ossa</h1>
-                    <h2 class="header-desc">Frontend developer and Visual designer</h2>
-                    <p class="header-p">A passionate designer and web developer, solving problems, and detail attention
-                        oriented.</p>
+                    <h2 class="header__desc">Frontend developer and Visual designer</h2>
+                    <p class="header__p">A passionate designer and web developer, solving problems, and detail attention oriented.</p>
 
                     <div class="social">
-                        <div class="imgandtext grow">
-                            <img src="./images/ant-design_mail-outlined.svg" alt="icon" />
+                        <div class="social__item">
+                            <img class="social__icon" src="./images/ant-design_mail-outlined.svg" alt="icon" />
                             <p>jorgehossa@gmail.com</p>
                         </div>
-                        <div class="imgandtext">
-                            <img src="./images/ant-design_linkedin-outlined.svg" alt="icon" /><a
-                                href="https://www.linkedin.com" target="_blank" rel="noreferrer">jorgehossa</a>
-                        </div>
-                        <div class="imgandtext">
-                            <img src="./images/ant-design_github-filled.svg" alt="icon" /><a href="https://github.com"
-                                target="_blank" rel="noreferrer">georgehossa</a>
-                        </div>
-                        <div class="imgandtext">
-                            <img src="./images/ant-design_dribbble-outlined.svg" alt="icon" /><a
-                                href="https://dribbble.com" target="_blank" rel="noreferrer">georgehossa</a>
+                        <div class="social__links">
+                            <div class="social__item">
+                                <img class="social__icon" src="./images/ant-design_linkedin-outlined.svg" alt="icon" />
+                                <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">jorgehossa</a>
+                            </div>
+                            <div class="social__item">
+                                <img class="social__icon" src="./images/ant-design_github-filled.svg" alt="icon" />
+                                <a href="https://github.com" target="_blank" rel="noreferrer">georgehossa</a>
+                            </div>
+                            <div class="social__item">
+                                <img class="social__icon" src="./images/ant-design_dribbble-outlined.svg" alt="icon" />
+                                <a href="https://dribbble.com" target="_blank" rel="noreferrer">georgehossa</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="header__image">
-                    <img class="avatar" srcset="avatar-platzi 1.jpg, avatar-platzi 1@2x.jpg, avatar-platzi 1@3x.jpg"
-                        src="./images/avatar/avatar-platzi 1@3x.jpg" alt="Profile Picture" />
+                    <img class="avatar" srcset="avatar-platzi 1.jpg, avatar-platzi 1@2x.jpg, avatar-platzi 1@3x.jpg" src="./images/avatar/avatar-platzi 1@3x.jpg" alt="Profile Picture" />
                 </div>
             </div>
         </header>
 
         <div class="info">
-            <div class="info__experience">
-                <section class="info__experience__section">
-                    <div>
-                        <h2>Experience</h2>
-                        <p class="experience__date date">Sep. 2017 - Currently</p>
-                        <p class="experience__qualification qualification"><span class="bold">Web developer</span>
-                            Julius2Grow</p>
+            <section class="info__experience">
+                <h2>Experience</h2>
+                <div>
+                    <p class="experience__date">Sep. 2017 - Currently</p>
+                    <p class="experience__qualification"><span class="bold">Web developer</span> Julius2Grow</p>
+                    <div class="experience__skills">
                         <p class="experience__skill">- Help to administrate and maintain client's websites.</p>
-                        <p class="experience__skill line">- Administrate client web site implementing different
-                            solutions according
-                            to
-                            client needs using CMS's tools, HTML, CSS, and Javascript.</p>
+                        <p class="experience__skill divider">- Administrate client web site implementing different solutions according to client needs using CMS's tools, HTML, CSS, and Javascript.</p>
                     </div>
-                    <div>
-                        <p class="experience__date date">Dec. 2016 - Sep. 2017</p>
-                        <p class="experience__qualification qualification"><span class="bold">Creative director and SEM
-                                manager</span> Asimagen
-                            Comunicaciones
-                        </p>
+                </div>
+                <div>
+                    <p class="experience__date">Dec. 2016 - Sep. 2017</p>
+                    <p class="experience__qualification"><span class="bold">Creative director and SEM manager</span> Asimagen Comunicaciones</p>
+                    <div class="experience__skills">
                         <p class="experience__skill">- Admin clients SEM accounts on Facebook and Instagram.</p>
-                        <p class="experience__skill line">- Design monthly key visuals for social media campaigns.</p>
+                        <p class="experience__skill divider">- Design monthly key visuals for social media campaigns.</p>
                     </div>
-                    <div>
-                        <p class="experience__date date">Jul. 2016 - Dec. 2016</p>
-                        <p class="experience__qualification qualification"><span class="bold">Digital marketing manager
-                                and designer</span> Altotrafico
-                        </p>
+                </div>
+                <div>
+                    <p class="experience__date">Jul. 2016 - Dec. 2016</p>
+                    <p class="experience__qualification"><span class="bold">Digital marketing manager and designer</span> Altotrafico</p>
+                    <div class="experience__skills">
                         <p class="experience__skill">- Admin clients SEM accounts on Facebook and Instagram</p>
-                        <p class="experience__skill line">- Design and administrate social media accounts and campaigns.
-                        </p>
+                        <p class="experience__skill divider">- Design and administrate social media accounts and campaigns.</p>
                     </div>
-                    <div>
-                        <p class="experience__date date">Jul. 2015 - Jun. 2016</p>
-                        <p class="experience__qualification qualification"><span class="bold">Web designer</span>
-                            Nuclear Agencia Digital</p>
+                </div>
+                <div>
+                    <p class="experience__date">Jul. 2015 - Jun. 2016</p>
+                    <p class="experience__qualification"><span class="bold">Web designer</span>
+                        Nuclear Agencia Digital</p>
+                    <div class="experience__skills">
                         <p class="experience__skill">- Admin clients SEM accounts on Facebook and Instagram.</p>
-                        <p class="experience__skill line">- Design and administrate social media accounts and campaigns.
-                        </p>
+                        <p class="experience__skill divider">- Design and administrate social media accounts and campaigns.</p>
                     </div>
-                    <div>
-                        <p class="experience__date date">Sep. 2013 - Jul. 2015</p>
-                        <p class="experience__qualification qualification"><span class="bold">Graphic designer</span>
-                            Asimagen Comunicaciones</p>
-                        <p class="experience__skill line">- Design and administrate social media accounts and campaigns.
-                        </p>
+                </div>
+                <div>
+                    <p class="experience__date">Sep. 2013 - Jul. 2015</p>
+                    <p class="experience__qualification"><span class="bold">Graphic designer</span> Asimagen Comunicaciones</p>
+                    <div class="experience__skills">
+                        <p class="experience__skill divider">- Design and administrate social media accounts and campaigns.</p>
                     </div>
-                    <div>
-                        <p class="experience__date date">Jun. 2005 - Sep. 2013</p>
-                        <p class="experience__qualification qualification" qualification><span class="bold">Graphic
-                                designer</span> Corporación Industrial Minuto de
-                            Dios
-                        </p>
-                        <p class="experience__skill">- Design and maintain the brand, adapt it to company diferents
-                            channels
-                            and
-                            campaigns.</p>
-                        <p class="experience__skill line">- Design and develop web site of the company.</p>
+                </div>
+                <div>
+                    <p class="experience__date">Jun. 2005 - Sep. 2013</p>
+                    <p class="experience__qualification"><span class="bold">Graphic designer</span> Corporación Industrial Minuto de Dios</p>
+                    <div class="experience__skills">
+                        <p class="experience__skill">- Design and maintain the brand, adapt it to company diferents channels and campaigns.</p>
+                        <p class="experience__skill divider">- Design and develop web site of the company.</p>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
+
             <div class="info__other">
                 <section class="info__skills">
                     <h2 class="skills">Skills</h2>
-                    <ul class="skill__information information">
+                    <ul class="skill__information">
                         <li>Javascript</li>
                         <li>ReactJs</li>
                         <li>HTML</li>
@@ -131,46 +126,38 @@
                         <li>Graphic design</li>
                     </ul>
                 </section>
+
                 <section class="info__formations">
                     <h2 class="formations">Formation</h2>
                     <div>
-                        <p class="formation__date date">2020 - 2023</p>
-                        <p class="formation__qualification qualification line"><span class="bold new__line">Platzi
-                                Master -
-                                Frontend Developer</span> Platzi</p>
+                        <p class="formation__date">2020 - 2023</p>
+                        <p class="formation__qualification divider"><span class="bold new__line">Platzi Master - Frontend Developer</span> Platzi</p>
                     </div>
                     <div>
-                        <p class="formation__date date">2004 - 2009</p>
-                        <p class="formation__qualification qualification line"><span class="bold new__line">Labor
-                                Technician in
-                                Digital Graphic
-                                Design Skills</span> CESDE</p>
+                        <p class="formation__date">2004 - 2009</p>
+                        <p class="formation__qualification divider"><span class="bold new__line">Labor Technician in Digital Graphic Design </br>Skills</span> CESDE</p>
                     </div>
                 </section>
 
                 <section class="info__languages">
-                    <h2 class="languages">Language</h2>
-                    <p class="language__information information">Spanish (Native)</p>
-                    <p class="language__information information">English (Limited working proficiency)</p>
+                    <h2>Language</h2>
+                    <div class="languages">
+                        <p class="language__information">Spanish (Native)</p>
+                        <p class="language__information">English (Limited working proficiency)</p>
+                    </div>
                 </section>
 
                 <section class="info__projects">
                     <h2 class="projects">Projects</h2>
                     <div class="project">
-                        <a class="project__clickable" href="https://www.linkedin.com">Hope-Tracker</a><img
-                            src="./images/ant-design_link-outlined.svg" alt="icon" />
-                        <p class="project__information information">COVID app focused on recover cases per country.
-                            React, React-Router,
-                            Github,
-                            Figma, React Chart.</p>
+                        <a class="project__link" href="https://github.com" target="_blank" rel="noreferrer">Hope-Tracker</a>
+                        <img src="./images/ant-design_link-outlined.svg" alt="icon" />
+                        <p class="project__information">COVID app focused on recover cases per country. React, React-Router, Github, Figma, React Chart.</p>
                     </div>
                     <div class="project">
-                        <a class="project__clickable" href="https://www.linkedin.com">Simple Weather Card App</a><img
-                            src="./images/ant-design_link-outlined.svg" alt="icon" />
-                        <p class="project__information information">Simple weather card store the last city search.
-                            Javascript, OOP, SASS,
-                            HTML,
-                            Webpack, Netlify.</p>
+                        <a class="project__link" href="https://github.com" target="_blank" rel="noreferrer">Simple Weather Card App</a>
+                        <img src="./images/ant-design_link-outlined.svg" alt="icon" />
+                        <p class="project__information">Simple weather card store the last city search. Javascript, OOP, SASS, HTML, Webpack, Netlify.</p>
                     </div>
                 </section>
             </div>
