@@ -21,27 +21,27 @@
         <header class="header">
             <div class="container">
                 <div class="header__content">
-                    <h1>Jorge Ossa</h1>
+                    <h1 class="header__name">Jorge Ossa</h1>
                     <h2 class="header__desc">Frontend developer and Visual designer</h2>
                     <p class="header__p">A passionate designer and web developer, solving problems, and detail attention oriented.</p>
 
                     <div class="social">
                         <div class="social__item">
                             <img class="social__icon" src="./images/ant-design_mail-outlined.svg" alt="icon" />
-                            <p>jorgehossa@gmail.com</p>
+                            <a class="link email" href="mailto:jorgehossa@gmail.com">jorgehossa@gmail.com</a>
                         </div>
                         <div class="social__links">
                             <div class="social__item">
                                 <img class="social__icon" src="./images/ant-design_linkedin-outlined.svg" alt="icon" />
-                                <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">jorgehossa</a>
+                                <a class="link" href="https://www.linkedin.com" target="_blank" rel="noreferrer">jorgehossa</a>
                             </div>
                             <div class="social__item">
                                 <img class="social__icon" src="./images/ant-design_github-filled.svg" alt="icon" />
-                                <a href="https://github.com" target="_blank" rel="noreferrer">georgehossa</a>
+                                <a class="link" href="https://github.com" target="_blank" rel="noreferrer">georgehossa</a>
                             </div>
                             <div class="social__item">
                                 <img class="social__icon" src="./images/ant-design_dribbble-outlined.svg" alt="icon" />
-                                <a href="https://dribbble.com" target="_blank" rel="noreferrer">georgehossa</a>
+                                <a class="link" href="https://dribbble.com" target="_blank" rel="noreferrer">georgehossa</a>
                             </div>
                         </div>
                     </div>
@@ -55,7 +55,7 @@
 
         <div class="info">
             <section class="info__experience">
-                <h2>Experience</h2>
+                <h2 class="title">Experience</h2>
                 <div>
                     <p class="experience__date">Sep. 2017 - Currently</p>
                     <p class="experience__qualification"><span class="bold">Web developer</span> Julius2Grow</p>
@@ -107,8 +107,8 @@
             </section>
 
             <div class="info__other">
-                <section class="info__skills">
-                    <h2 class="skills">Skills</h2>
+                <section class="info__section">
+                    <h2 class="title">Skills</h2>
                     <ul class="skill__information">
                         <li>Javascript</li>
                         <li>ReactJs</li>
@@ -127,35 +127,41 @@
                     </ul>
                 </section>
 
-                <section class="info__formations">
-                    <h2 class="formations">Formation</h2>
+                <section class="info__section mt-formations">
+                    <h2 class="title">Formation</h2>
                     <div>
                         <p class="formation__date">2020 - 2023</p>
-                        <p class="formation__qualification divider"><span class="bold new__line">Platzi Master - Frontend Developer</span> Platzi</p>
+                        <div class="formation__qualification">
+                            <span class="bold">Platzi Master - Frontend Developer</span>
+                            <p class="formation__desc divider">Platzi</p>
+                        </div>
                     </div>
                     <div>
                         <p class="formation__date">2004 - 2009</p>
-                        <p class="formation__qualification divider"><span class="bold new__line">Labor Technician in Digital Graphic Design </br>Skills</span> CESDE</p>
+                        <div class="formation__qualification">
+                            <span class="bold">Labor Technician in Digital Graphic Design</br>Skills</span>
+                            <p class="formation__desc divider">CESDE</p>
+                        </div>
                     </div>
                 </section>
 
-                <section class="info__languages">
-                    <h2>Language</h2>
+                <section class="info__section mt-languages">
+                    <h2 class="title">Language</h2>
                     <div class="languages">
                         <p class="language__information">Spanish (Native)</p>
                         <p class="language__information">English (Limited working proficiency)</p>
                     </div>
                 </section>
 
-                <section class="info__projects">
-                    <h2 class="projects">Projects</h2>
+                <section class="info__section mt-projects">
+                    <h2 class="title">Projects</h2>
                     <div class="project">
-                        <a class="project__link" href="https://github.com" target="_blank" rel="noreferrer">Hope-Tracker</a>
+                        <a class="link project__link" href="https://github.com" target="_blank" rel="noreferrer">Hope-Tracker</a>
                         <img src="./images/ant-design_link-outlined.svg" alt="icon" />
                         <p class="project__information">COVID app focused on recover cases per country. React, React-Router, Github, Figma, React Chart.</p>
                     </div>
                     <div class="project">
-                        <a class="project__link" href="https://github.com" target="_blank" rel="noreferrer">Simple Weather Card App</a>
+                        <a class="link project__link" href="https://github.com" target="_blank" rel="noreferrer">Simple Weather Card App</a>
                         <img src="./images/ant-design_link-outlined.svg" alt="icon" />
                         <p class="project__information">Simple weather card store the last city search. Javascript, OOP, SASS, HTML, Webpack, Netlify.</p>
                     </div>

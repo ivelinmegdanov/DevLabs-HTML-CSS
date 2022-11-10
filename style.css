@@ -13,26 +13,12 @@
 body {
   font-family: "IBM Plex Sans", sans-serif;
 }
-h1 {
-  font-size: 44px;
-  color: var(--gray-dark);
-}
-h2 {
-  font-size: 12px;
-  font-weight: bold;
-  color: var(--gray-dark);
-}
-a {
-  font-size: 9px;
-  color: var(--gray-dark);
-}
 p {
   color: var(--gray-dark);
 }
 
 .body {
   width: 612px;
-  height: 792px;
   border-style: solid;
   border-width: 1px;
   margin: auto;
@@ -44,10 +30,15 @@ p {
 .header__content {
   width: 58%;
 }
+.header__name {
+  font-size: 44px;
+  color: var(--gray-dark);
+}
 .header__desc {
   -webkit-background-clip: text;
   background-image: var(--background-image);
   color: transparent;
+  font-size: 12px;
 }
 .header__p {
   font-size: 10px;
@@ -63,6 +54,13 @@ p {
 }
 .social__item p {
   font-size: 9px;
+}
+.link {
+  font-size: 9px;
+  color: var(--gray-dark);
+}
+.email {
+  text-decoration: none;
 }
 .social__links {
   display: flex;
@@ -88,6 +86,10 @@ p {
 }
 .info__experience {
   width: 58%;
+}
+.title {
+  font-size: 12px;
+  color: var(--gray-dark);
 }
 .experience__date {
   font-size: 9px;
@@ -143,7 +145,7 @@ p {
   content: ".";
 }
 
-.info__formations {
+.mt-formations {
   margin-top: 22px;
 }
 .formation__date {
@@ -158,11 +160,13 @@ p {
   color: var(--gray-light);
   margin-top: 4px;
 }
-.new__line {
-  display: block;
+.formation__desc {
+  font-size: 10px;
+  color: var(--gray-light);
+  margin-top: 2px;
 }
 
-.info__languages {
+.mt-languages {
   margin-top: 26px;
 }
 .languages {
@@ -172,7 +176,7 @@ p {
   font-size: 9px;
 }
 
-.info__projects {
+.mt-projects {
   margin-top: 28px;
 }
 .project {
@@ -194,15 +198,6 @@ p {
 
 /* Tablets and phones */
 @media (max-width: 768px) {
-  h1 {
-    font-size: 50px;
-  }
-  h2 {
-    font-size: 22px;
-  }
-  a {
-    font-size: 14px;
-  }
   p {
     font-size: 14px !important;
   }
@@ -220,6 +215,12 @@ p {
     text-align: center;
     width: 85%;
   }
+  .header__name {
+    font-size: 50px;
+  }
+  .header__desc {
+    font-size: 22px;
+  }
   .header__p {
     font-size: 14px;
   }
@@ -233,6 +234,9 @@ p {
   }
   .social__icon {
     width: 20px;
+  }
+  .link {
+    font-size: 14px;
   }
   .header__image {
     width: 85%;
@@ -251,6 +255,9 @@ p {
   .info__experience {
     width: 85%;
   }
+  .title {
+    font-size: 22px;
+  }
   .info__other {
     width: 85%;
     margin-top: 15px;
@@ -261,5 +268,8 @@ p {
   }
   .project__link {
     font-size: 16px;
+  }
+  .formation__qualification {
+    font-size: 14px;
   }
 }
